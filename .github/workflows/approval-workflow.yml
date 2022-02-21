@@ -3,3 +3,6 @@ on: pull_request_review
 jobs:
   labelWhenApproved:
     runs-on: ubuntu-latest
+    
+    steps:
+     - uses: action/pullreminders/label-when-approved-action@v1
