@@ -5,7 +5,7 @@ name: Node CI
 on: [ push ]
 
 jobs:
-      - uses: actions/upload-artifact@master
+    needs: build
         with:
           name: webpack artifacts
           path: public/
